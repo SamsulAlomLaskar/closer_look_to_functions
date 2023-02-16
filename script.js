@@ -95,3 +95,5 @@ greet("Hello")("Samsul");
 const grt = (greetings) => (name) => console.log(`${greetings} ${name}`);
 
 grt("Hi")("Sam");
+
+console.log(grt);
