@@ -97,3 +97,18 @@ const grt = (greetings) => (name) => console.log(`${greetings} ${name}`);
 grt("Hi")("Sam");
 
 // console.log(grt);
+
+//? IIFE -- Functions create scopes, & one scope doesn't have access to the inner scope
+
+(function () {
+  console.log("This will never run again");
+  //* let isPrivate = 20; is encapsulated inside this scope
+})();
+
+(() => console.log("This will never run again Arrow Function"))();
+
+//? Closures -- A closure makes a function remember all the variables that existed at the function birthplace ( Closure has the priority over the scope chain  )
+
+//* Any function always has the access to the variable environment of the execution context in which the function was created
+
+//? A fucntion has access to the variable environment(VE) of the execution context in which it was created // VE attahced to the function, exactly as it was at the time and place the function was created

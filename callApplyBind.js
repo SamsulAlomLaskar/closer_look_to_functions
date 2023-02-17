@@ -93,4 +93,3 @@ addTaxCopy(0.18)(300);
 const addGST2 = addTaxCopy(0.28);
 addGST2(149);
 addGST2(99);
-addGST2(49);
